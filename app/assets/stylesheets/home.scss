@@ -1,0 +1,63 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+/* htmlとbodyの高さ、幅、文字種類、文字の色設定 */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222222;
+}
+
+/* navbarの四方の内側の余白を0.8remに設定 */
+
+.navbar {
+  padding: 0.8rem;
+}
+
+/* navbar中ののli(ナビバー内のテキスト)の右側の要素内側の余白を20pxに設定 */
+
+.navbar-nav li {
+  padding-left: 20px;
+}
+
+/* navbarの中のHomeなどの各テキストの文字サイズを1.1emに設定して、設定が上書きされないようにinportantにしている */
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+
+/* footerの中の設定 */
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+  }
+  
+  /* footerの中のコンテンツを区切る線の設定*/
+  
+  hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* miriwo.comの部分の記載に関する設定 */
+  
+  fotter h5 {
+    color: #d5d5d5;
+  }
+  
+  /* miriwo.comの上にある区切り線の設定 */
+  
+  hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
