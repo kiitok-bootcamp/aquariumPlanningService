@@ -15,4 +15,8 @@ class UsersController < ApplicationController
     @user = User.new(name: params[:name], email: params[:email])
     @user.save
   end
+
+  def show
+    
+  end
 end
