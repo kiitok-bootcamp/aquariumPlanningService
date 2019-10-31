@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   post "users/create" => "users#create"
   get "users/login" => "users#login"
-  get "users/new" => "users#new"
+  get "users/signup" => "users#signup"
   get "users/index" => "users#index"
   get "users/:id" => "users#show"
   get "/" => "home#top"
