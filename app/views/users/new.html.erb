@@ -1,40 +1,13 @@
-<!-- header -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-	<div class="container-fluid">
-		<a href="#" class="navbar-brand"><img src="" alt=""></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-		    <ul class="navbar-nav mr-auto">
-				<li class="navbar-item"><a href="/" class="nav-link">トップ</a></li>
-			</ul>
-			<ul class="navbar-nav ml-auto">
-				<li class="navbar-item"><a href="/users/login" class="nav-link">ログイン</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
 <!-- body -->
 <body>
-    <h1>新規登録</h1>
-    <p>メールアドレス</p>
-	<input type="email" name="email">
-    <p>ユーザー名</p>
-	<input type="" name="username">
-    <p>パスワードß</p>
-	<input type="password" name="password">
+	<%= form_tag("/users/create") do %> 
+        <h1>新規登録</h1>
+        <p>メールアドレス</p>
+	    <input type="email" name="email">
+        <p>ユーザー名</p>
+	    <input type="" name="username">
+        <p>パスワード</p>
+	    <input type="password" name="password">
+	    <input type="submit" value="新規登録">
+	<% end %>
 </body>
-    
-<!-- footer -->
-<footer>
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-12">
-				<hr class="light-100">
-				<h5>&copy; miriwo.com</h5>
-			</div>
-		</div>
-	</div>
-</footer>
